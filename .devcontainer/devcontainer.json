@@ -1,0 +1,6 @@
+{
+  "name": "R environment",
+  "image": "rocker/r-ver:latest",
+  "features": {"ghcr.io/devcontainers/features/git:1": {}},
+  "postCreateCommand": "R -e \"install.packages(c('tidyverse','languageserver'), repos='https://cloud.r-project.org')\""
+}
